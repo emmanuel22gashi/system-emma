@@ -1,132 +1,101 @@
-*{
+* {
     margin: 0;
     padding: 0;
-
-
 }
 
-
-body{
-background:#222 ;
-color: #fff;
-font-family: system-ui;
-
-
+body {
+    background: #222;
+    color: #fff;
+    font-family: system-ui;
 }
 
-.crud{
-
-width: 80%;
-margin: auto;
-
-
+.crud {
+    width: 80%;
+    margin: auto;
 }
 
-.head{
-
+.head {
     text-align: center;
     text-transform: uppercase;
     margin: 10px 0;
 }
 
-input{
-
-width: 100%;
-height: 30px;
-outline: none;
-border: none;
-background: #111;
-margin: 4px 0;
-border-radius: 4px;
-padding:4px ;
-color: #fff;
+input {
+    width: 100%;
+    height: 30px;
+    outline: none;
+    border: none;
+    background: #111;
+    margin: 4px 0;
+    border-radius: 4px;
+    padding: 4px;
+    color: #fff;
+    transition: background 0.3s; /* Added transition for smoother focus effect */
 }
 
-input:focus{
-
-background: #000;
-transform: scale(1.1);
-
-
-}
-.price input{
-
-width: 20%;
-
-
+input:focus {
+    background: #000;
+    transform: scale(1.05); /* Slightly reduced scale for a more subtle effect */
 }
 
-#total{
-background: #a00d02;
-padding: 4px 2px;
-border-radius:4px ;
-
-
-}
-#total::before{
-
-content: "Total: ";
-
+.price input {
+    width: 20%;
 }
 
-button{
-
-width: 100%;
-height: 30px;
-border: none;
-cursor: pointer;
-background: #390053;
-color: #fff;
-border-radius: 20px;
-transition: 0.5s;
-
+#total {
+    background: #a00d02;
+    padding: 4px 2px;
+    border-radius: 4px;
 }
 
-button:hover{
-
-background: #51025f;
-
-letter-spacing: 1px;
-
+#total::before {
+    content: "Total: ";
 }
 
-.btnSearch{
+button {
+    width: 100%;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    background: #390053;
+    color: #fff;
+    border-radius: 20px;
+    transition:background 0.5s, transform 0.3s; /* Added transform for button scaling */
+}
 
+button:hover {
+    background: #51025f;
+    letter-spacing: 1px;
+    transform: scale(1.05); /* Added scale effect on hover */
+}
+
+.btnSearch {
     display: flex;
     justify-content: space-between;
 }
 
-.btnSearch button{
-
+.btnSearch button {
     width: 45%;
 }
 
-#delatAll{
-    margin: 20px , 0;
-
-
-
+#delatAll {
+    margin: 20px 0; /* Fixed incorrect comma in margin */
 }
-table button:hover{
 
+table button:hover {
     transform: scale(1.1);
 }
 
-
-
-table{
-
-width: 100%;
-text-align: center;
-margin: 10px 0;
+table {
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
 }
 
-table th{
-
-   text-transform: uppercase;
+table th {
+    text-transform: uppercase;
 }
 
-th ,td {
-
+th, td {
     padding: 5px;
 }
